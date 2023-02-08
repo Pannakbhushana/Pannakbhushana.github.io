@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul_Mishra_Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div id="header">
          <div class="container">
             <nav>
-                <img src="./image/rahul.jpg" alt="" id="logo" >
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
+                <div><img src="./image/rahul.jpg" alt="" id="logo" ></div>
+
+                <div  >
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </div>
             </nav>
             
         </div>
@@ -43,13 +47,137 @@
 
         </div>
        
-    </div> -->
+    </div> 
     </div>
    
+    <!-------------------------------About page--------------------------------------->
+
+       <div id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title" >About Me</h1>
+                        <p>
+                        A passionate & Enthusiastic 🤓 Full Stack Web Developer & learning MERN Stack at Masai School, 
+                        Bangalore.Always eager to learn something new and deal with new tasks and challenges. 
+                        I have done my Bechlor's of Engineering from Greater Noida , Uttar Pradesh , India.
+                        i Learnt Full Stack Web Development from Masai School🏫(India's first Skill building School 
+                        "Driven by Outcomes, Fuelled by Ambitions.")
+                        💻 1200+ Hours Practical Coding , ⌛100+ Hours Soft Skill Development , 🌟80+ Mini Projects , 
+                        📚300 Hours Data Structures & Algorithms , ⏰100+ Hours Math & Logic , 📂10+ Projects & Hackathon
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')" >Education</p>
+
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills" >
+                            <ul>
+                                <li><span>coding</span><br/>1200+ hours Practical Coding</li>
+                                <li><span>Data Structures & Algorithms</span><br/>300+ Hours Practice</li>
+                                <li><span>Soft Skills</span><br/>100+ Hours Practice</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience" >
+                            <ul>
+                                <li><span>Director</span><br/>Pinaak The divinity within Private Limited</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education" >
+                            <ul>
+                                <li><span>July 2022-Apri 2023</span><br/>Full Stack Web Developer</li>
+                                <li><span>April 2012-May 2018</span><br/>Bechlor of Engineering from Technocrats Institute of Technology Bhopal</li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="about-col-1">
+                        <img src="/image/rahul_image.jpeg" alt="">
+                    </div>
+
+                    
+                    
+                </div>
+            </div>
+       </div>  
        
+       
+       <!-- ------------------------------Skills------------------------ -->
+        <div id="skill-container">
+            <h1 class="sub-title" >My Skills</h1>
+            <div id="skills-page">
+                <div><img src="/image/htmlLogo.png" alt=""></div>
+                <div><img src="/image/cssLogo.png" alt=""></div>
+                <div><img src="/image/nodeJs.webp" alt=""></div>
+                <div><img src="/image/monodb.png" alt=""></div>
+                <div><img src="/image/js.webp" alt=""></div>
+                <div><img src="/image/reactlogo.png" alt=""></div>
+                <div><img src="/image/express.png" alt=""></div>
+                <div><img src="/image/chakra.png" alt=""></div>
+            </div>
+        </div>
 
-                
+        <!-- --------------------------projects---------------------- -->
+        <div id="portfolio">
+            <div id="container">
+                <h1 class="sub-title" >My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/image/FreshAahar.jpeg" alt="">
+                        <div class="layer">
+                            <h3>E-commercial website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam eum ratione .</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
 
+                    <div class="work">
+                        <img src="/image/FreshAahar.jpeg" alt="">
+                        <div class="layer">
+                            <h3>E-commercial website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam eum ratione .</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/image/FreshAahar.jpeg" alt="">
+                        <div class="layer">
+                            <h3>E-commercial website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam eum ratione .</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
 
 </body>
 </html>
