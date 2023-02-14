@@ -10,10 +10,9 @@
 </head>
 <body>
 
-    <div id="header">
-         <div class="container">
+     <div class="container">
             <nav>
-                <div><img src="./image/rahul.jpg" alt="" id="logo" ></div>
+                <div><h1 class="logo-text">RAHUL MISHRA</h1></div>
 
                 <div  >
                     <ul>
@@ -22,28 +21,36 @@
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Resume</a></li>
+                        <li><a href="image/Rahul_Mishra_Resume.pdf" download  >Resume</a></li>
                     </ul>
                 </div>
             </nav>
             
         </div>
 
-        <div style="display: flex" >
-            <div id="bg"></div>
-        <div id="header-text">
-                    
-            <h2>Hi, I'm Rahu Kumar Mishra</h2>
-            <br/>
-            <h1>And I am a Full stack Web Developer</h1>
-            <br/>
 
-            <p style="line-height: 30px" >Analytical and detail-Oriented aspiring Full Stack Web Developer💻.Capable of
-                writing production-ready code using React JS, Redux, HTML and CSS on the front_end 
-                and  NodeJS, ExpressJS, and MongoDB on the backend to build single-page  
-                applications. Collaborative, team player who is proficient in working with a interactive 
-                team, on goal-oriented 📂Projects.</p>
-        </div> 
+    <div id="header">
+        
+        <div class="home" >
+
+            <div id="bg">
+                <img src="./image/rahul_image.jpg" alt="">
+            </div>
+
+                <div id="header-text">
+                            <h1>Hi,</h1>
+                            <br/>
+                    <h2> I'm Rahu Kumar Mishra</h2>
+                    <br/>
+                    <h1>And I am a Full stack Web Developer</h1>
+                    <br/>
+
+                    <p style="line-height: 30px" >Analytical and detail-Oriented aspiring Full Stack Web Developer💻.Capable of
+                        writing production-ready code using React JS, Redux, HTML and CSS on the front_end 
+                        and  NodeJS, ExpressJS, and MongoDB on the backend to build single-page  
+                        applications. Collaborative, team player who is proficient in working with a interactive 
+                        team, on goal-oriented 📂Projects.</p>
+                </div> 
 
         </div>
        
@@ -56,19 +63,25 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="about-col-2">
-                        <h1 class="sub-title" >About Me</h1>
-                        <p>
-                        A passionate & Enthusiastic 🤓 Full Stack Web Developer & learning MERN Stack at Masai School, 
-                        Bangalore.Always eager to learn something new and deal with new tasks and challenges. 
-                        I have done my Bechlor's of Engineering from Greater Noida , Uttar Pradesh , India.
-                        i Learnt Full Stack Web Development from Masai School🏫(India's first Skill building School 
-                        "Driven by Outcomes, Fuelled by Ambitions.")
-                        💻 1200+ Hours Practical Coding , ⌛100+ Hours Soft Skill Development , 🌟80+ Mini Projects , 
-                        📚300 Hours Data Structures & Algorithms , ⏰100+ Hours Math & Logic , 📂10+ Projects & Hackathon
-                        </p>
+                <div class="about-col-2" >
+                        <h1 class="sub-title" style="margin-left: 25%;" >About Me</h1>
+                       <div class="text">
+                        <p class="text" >
+                            A passionate & Enthusiastic 🤓 Full Stack Web Developer & learning MERN Stack at Masai School, 
+                            Bangalore.Always eager to learn something new and deal with new tasks and challenges. 
+                            I have done my Bechlor's of Engineering from Greater Noida , Uttar Pradesh , India.
+                            i Learnt Full Stack Web Development from Masai School🏫(India's first Skill building School 
+                            "Driven by Outcomes, Fuelled by Ambitions.")
+                            💻 1200+ Hours Practical Coding , ⌛100+ Hours Soft Skill Development , 🌟80+ Mini Projects , 
+                            📚300 Hours Data Structures & Algorithms , ⏰100+ Hours Math & Logic , 📂10+ Projects & Hackathon
+                            </p>
+                       </div>
+                       
+                    <div id="about-me" >
 
-                        <div class="tab-titles">
+                       
+                       
+                       <div class="tab-titles" >
                             <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
                             <p class="tab-links"onclick="opentab('education')" >Education</p>
@@ -97,12 +110,13 @@
                                 
                             </ul>
                         </div>
-
                     </div>
 
-                    <div class="about-col-1">
+                </div>
+
+                    <!-- <div class="about-col-1">
                         <img src="/image/rahul_image.jpeg" alt="">
-                    </div>
+                    </div> -->
 
                     
                     
@@ -113,7 +127,7 @@
        
        <!-- ------------------------------Skills------------------------ -->
         <div id="skill-container">
-            <h1 class="sub-title" >My Skills</h1>
+            <h1 class="sub-title" style="margin-left: 40%;">My Skills</h1>
             <div id="skills-page">
                 <div><img src="/image/htmlLogo.png" alt=""></div>
                 <div><img src="/image/cssLogo.png" alt=""></div>
@@ -129,7 +143,7 @@
         <!-- --------------------------projects---------------------- -->
         <div id="portfolio">
             <div id="container">
-                <h1 class="sub-title" >My Work</h1>
+                <h1 class="sub-title" style="margin-left: 40%;">My Work</h1>
                 <div class="work-list">
                     <div class="work">
                         <img src="/image/FreshAahar.jpeg" alt="">
@@ -160,7 +174,41 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- ----------------------------contact--------------------------------------->
+
+        <div id="bottom">
+            <h1 class="sub-title" style="margin-left: 40%;">Contact Me</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                       
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> rahulkumarmishra5338@gmail.com</p>
+                        <br/>
+                        <p><i class="fa-solid fa-phone"></i>+919304395338</p>
+
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/rahul-kumar-mishra-060054241/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Pannakbhushana"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="image/Rahul_Mishra_Resume.pdf" download class="btn btn2" >Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" placeholder="Your Name" name="Name" required >
+                            <input type="email" placeholder="Your Email" name="emal" required >
+                            <textarea name="Message"  rows="6" placeholder="Your Message" ></textarea>
+                            <button type="submit" class="btn btn2" >Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright @ Rahul Mishra <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+        </div>
 
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
