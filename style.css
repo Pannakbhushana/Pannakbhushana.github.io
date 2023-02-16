@@ -74,6 +74,9 @@ nav ul li a:hover::after{
     text-align: center;
     margin: auto;
 }
+#header-text p{
+  line-height: 30px; 
+}
 
 
 .home{
@@ -94,9 +97,7 @@ nav ul li a:hover::after{
     height: 100%;
     border-radius: 50%;
 }
-#nav-menu{
-    background-color:#1aba95 ;
-}
+
 .logo-text{
     color: #fff; 
     border: 1px solid yellow;
@@ -241,6 +242,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    padding: 5%;
 }
 .work img{
     height: 100%;
@@ -288,6 +290,13 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
+}
+
+.git-link{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 /* -----------------------------------------------------------contact--------------------------------------------------------- */
@@ -389,14 +398,283 @@ form .btn2{
     color: #ff004f;
 }
 
-/* -----------------------------------css for small screen--------------------- */
+/* ---------------------------------------github---------------------------- */
 
-@media only screen and (max-width:600px){
-    #bg{
-        width: 20%;
-        height: 90vh;
-        background-image: url(image/rahul_image.jpeg);
-        background-size: cover;
-        background-position: center;  
+#github{
+    border: 1px solid yellow;
+    width: 80%;
+    height: 150vh;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+    color: #fff;
+}
+#github h1{
+    padding: 3%;
+}
+
+/* -----------------------------------css for media quary--------------------- */
+
+#media{
+    display: none;
+    color: #fff;
+    margin-right: 10%;
+}
+#media:hover{
+    cursor: pointer;
+}
+
+#menu-list{
+    display: none;
+    background: #fff;
+    width: 15%;
+    border-radius: 5px;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 82%;
+    position: fixed;
+}
+
+#menu-list li{
+    padding: 10%;
+}
+#menu-list li:hover{
+    cursor: pointer;
+}
+
+#menu-list a{
+    text-decoration: none;
+}
+
+.about-heading{
+  margin-left: 25%;
+  color: #fff;
+}
+
+.copyright p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* small screen */
+@media all and (min-width:320px) and (max-width:679px){
+    /* navbar */
+    #nav-menu{
+        display: none;
     }
+
+    #media{
+        display: block;
+    }
+
+    #menu-list{
+        width: 20%;
+        margin-top: 7%;
+        margin-left: 78%;
+    }
+
+
+    /* home */
+
+   
+    #header-text{
+        width: 60%;
+        height: 100%;
+    }
+    
+    #header-text p{
+        font-size: smaller;
+        line-height: 30px;
+    }
+
+    #header-text h1{
+        font-size:medium; 
+        color: yellow;
+    }
+
+    #header-text h2{
+        font-size:medium; 
+        
+    }
+    
+    .home{
+        width: 140%;
+        height: 400px;
+        margin-top: 20%;
+    }
+
+    #bg{
+       
+        width: 40%;
+        height: 60%;
+        margin-top: 5%;
+    }
+
+
+
+    .about-heading{
+        font-size: 35px;
+        }
+
+
+           /* project */
+
+    #portfolio{
+        width: 135%;
+        height: 220vh;
+        margin-top: 10%;
+    }
+    
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+    .work{
+        height: 60vh;
+        width: 60%;
+        
+    }
+
+    /* github */
+
+    #github{
+        width: 120%;
+    }
+
+    /* contact */
+
+     .contact-left p i{
+        font-size: 15px;
+    }
+    .contact-left p{
+       font-size: 8px;
+       
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+
+     #bottom{
+        width: 135%;
+        height: 140vh;
+        margin-top: 10%;
+    }
+
+    /* copyright */
+    .copyright{
+        width: 135%;
+      
+    }
+    .copyright p{
+        color: #fff;
+    }
+  
+
+}
+
+
+
+
+
+
+
+
+/* medium screen */
+@media all and (min-width:680px) and (max-width:1024px){
+    /* navbar */
+    #nav-menu{
+        display: none;
+    }
+    #media{
+        display: block;
+    }
+
+
+    /* home */
+    #header-text{
+        width: 60%;  
+    }
+    
+    #header-text p{
+        line-height: 28px;
+    }
+    
+    .home{
+        width: 100%;
+        height: 400px; 
+    }
+
+    #bg{
+       
+        width: 35%;
+        height: 80%;
+        margin-top: 5%;
+    }
+    
+    
+/* about*/
+    .about-heading{
+    font-size: 35px;
+    }
+
+
+    /* project */
+
+    #portfolio{
+        width: 100%;
+        height: 220vh;
+        margin-top: 10%;
+    }
+    
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+    .work{
+        height: 60vh;
+        width: 60%;
+        
+    }
+
+    /* contact */
+   
+    .contact-left p i{
+        font-size: 15px;
+    }
+    .contact-left p{
+       font-size: 12px;
+       
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+
+    #bottom{
+        width: 100%;
+        height: 100vh;
+        margin-top: 10%;
+    }
+
+    .copyright{
+        width: 100%;
+      
+    }
+    .copyright p{
+        color: #fff;
+    }
+    
+  
+
 }
