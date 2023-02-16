@@ -18,10 +18,10 @@
                     <ul>
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#skill-container">Skills</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#portfolio">Projects</a></li>
                         <li><a href="#bottom">Contact</a></li>
-                        <li><a href="image/Rahul_Mishra_Resume.pdf" download  >Resume</a></li>
+                        <li><a  href="image/Rahul_Mishra_Resume.pdf" download id="resume-link-2"  >Resume</a></li>
                     </ul>
                 </div>
                 <div id="media">
@@ -35,7 +35,7 @@
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skill-container">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#bottom">Contact</a></li>
                 <li><a href="image/Rahul_Mishra_Resume.pdf" download  >Resume</a></li>
@@ -43,9 +43,9 @@
         </div>
 
 
-    <div id="header">
+    <div id="header" class="nav-link home">
         
-        <div class="home" >
+        <div class="home" id="home" >
 
             <div id="bg">
                 <img src="./image/rahul_image.jpg" alt="">
@@ -54,7 +54,7 @@
                 <div id="header-text">
                             <h1>Hi,</h1>
                             <br/>
-                    <h2> I'm Rahu Kumar Mishra</h2>
+                    <h2 id="user-detail-name"> I'm Rahul Kumar Mishra</h2>
                     <br/>
                     <h1>And I am a Full stack Web Developer</h1>
                     <br/>
@@ -73,25 +73,25 @@
    
     <!-------------------------------About page--------------------------------------->
 
-       <div id="about">
+       <div id="about" class="nav-link about">
             <div class="container">
                 <div class="row">
 
                 <div class="about-col-2" >
                         <h1 class="about-heading"  >About Me</h1>
                        <div class="text">
-                        <p class="text" >
+                        <p class="text"  id="user-detail-intro" >
                             A passionate & Enthusiastic 🤓 Full Stack Web Developer & learning MERN Stack at Masai School, 
                             Bangalore.Always eager to learn something new and deal with new tasks and challenges. 
-                            I have done my Bechlor's of Engineering from Greater Noida , Uttar Pradesh , India.
-                            i Learnt Full Stack Web Development from Masai School🏫(India's first Skill building School 
+                            I have done my Betchelor's of Engineering from Technocrats Institute of Technology Bhopal , India.
+                            I Learnt Full Stack Web Development from Masai School🏫(India's first Skill building School 
                             "Driven by Outcomes, Fuelled by Ambitions.")
                             💻 1200+ Hours Practical Coding , ⌛100+ Hours Soft Skill Development , 🌟80+ Mini Projects , 
                             📚300 Hours Data Structures & Algorithms , ⏰100+ Hours Math & Logic , 📂10+ Projects & Hackathon
                             </p>
                        </div>
                        
-                    <div id="about-me" >
+                    <div id="about" class="about-section" >
 
                        
                        
@@ -120,7 +120,7 @@
                         <div class="tab-contents" id="education" >
                             <ul>
                                 <li><span>July 2022-Apri 2023</span><br/>Full Stack Web Developer</li>
-                                <li><span>April 2012-May 2018</span><br/>Bechlor of Engineering from Technocrats Institute of Technology Bhopal</li>
+                                <li><span>April 2012-May 2018</span><br/>Betchelor of Engineering from Technocrats Institute of Technology Bhopal</li>
                                 
                             </ul>
                         </div>
@@ -140,8 +140,8 @@
        
        
        <!-- ------------------------------Skills------------------------ -->
-        <div id="skill-container">
-            <h1 class="project-heading" style="margin-left: 40%; color: #fff;" >My Skills</h1>
+        <div id="skills" class="nav-link skills">
+            <h1 class="project-heading" style="margin-left: 40%; color: #fff;"  >My Skills</h1>
             <div id="skills-page">
                 <div><img src="/image/htmlLogo.png" alt=""></div>
                 <div><img src="/image/cssLogo.png" alt=""></div>
@@ -155,11 +155,11 @@
         </div>
 
         <!-- --------------------------projects---------------------- -->
-        <div id="portfolio">
+        <div id="portfolio" class="nav-link projects">
             <div id="container">
                 <h1 class="about-heading" style="margin-left: 40%;">My Work</h1>
               
-                <div class="work-list">
+                <div class="work-list" id="projects">
 
                     <div class="work">
                         <img src="/image/kalptaru.png" alt="">
@@ -230,7 +230,7 @@
         </div>
         <!-- --------------------------------------------------------github stats------------------------------------------->
 
-        <div id="github" >
+        <div id="github" id="github-streak-stats" >
             <h1>GitHub Stats</h1>
             <img style="width: 100%; height: 50%;" src="./image/githubstats.png" alt="">
             <h1>GitHub Calendar</h1>
@@ -239,21 +239,22 @@
 
         <!-- ----------------------------contact--------------------------------------->
 
-        <div id="bottom">
+        <div id="bottom" class="nav-link contact">
             <h1 class="about-heading" style="margin-left: 40%;">Contact Me</h1>
-            <div class="container"  >
+            <div class="container" id="contact" >
                 <div class="row">
                     <div class="contact-left">
                        
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> rahulkumarmishra5338@gmail.com</p>
+                        <p id="contact-email"><i class="fa-sharp fa-solid fa-paper-plane"></i> rahulkumarmishra5338@gmail.com</p>
                         <br/>
-                        <p><i class="fa-solid fa-phone"></i>+919304395338</p>
+                        <p id="contact-phone" ><i class="fa-solid fa-phone"></i>+919304395338</p>
+                        
 
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/rahul-kumar-mishra-060054241/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/Pannakbhushana"><i class="fa-brands fa-github"></i></a>
+                            <a id="contact-linkedin" href="https://www.linkedin.com/in/rahul-kumar-mishra-060054241/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a id="contact-github" href="https://github.com/Pannakbhushana"><i class="fa-brands fa-github"></i></a>
                         </div>
-                        <a href="image/Rahul_Mishra_Resume.pdf" download class="btn btn2" >Download CV</a>
+                        <a  href="image/Rahul_Mishra_Resume.pdf" download class="btn btn2" id="resume-link-1" >Download CV</a>
                     </div>
 
                     <div class="contact-right">
