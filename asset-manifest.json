@@ -1,23 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.c05a77ec.css",
-    "main.js": "/static/js/main.c3132646.js",
+    "main.js": "/static/js/main.232813bc.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Rahul-Kumar-Mishra-Resume.pdf": "/static/media/Rahul-Kumar-Mishra-Resume.b791398398617d7a3f65.pdf",
     "static/media/rahul.png": "/static/media/rahul.7297322872c823582bdb.png",
     "static/media/github.png": "/static/media/github.553c66159c5672f25df6.png",
     "static/media/phone.png": "/static/media/phone.097ef67f1a9a19cbff3b.png",
-    "static/media/calender.png": "/static/media/calender.bbd00d930c22a3bb84d0.png",
     "static/media/twitter.png": "/static/media/twitter.894988327f8d68209e91.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/mail.png": "/static/media/mail.9082177d266cee25a57b.png",
     "index.html": "/index.html",
     "main.c05a77ec.css.map": "/static/css/main.c05a77ec.css.map",
-    "main.c3132646.js.map": "/static/js/main.c3132646.js.map",
+    "main.232813bc.js.map": "/static/js/main.232813bc.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c05a77ec.css",
-    "static/js/main.c3132646.js"
+    "static/js/main.232813bc.js"
   ]
 }
