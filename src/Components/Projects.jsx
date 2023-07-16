@@ -1,21 +1,8 @@
 import React from "react";
-import {
-  Text,
-  Box,
-  Flex,
-  Divider,
-  CardBody,
-  Image,
-  Button,
-  Heading,
-  Stack,
-  Card,
-  Link,
-  CardFooter,
-  ButtonGroup,
-} from "@chakra-ui/react";
-
+import {Text,Box,Flex,Divider,CardBody,Image,Button,Heading,Stack,Card,Link} from "@chakra-ui/react";
 import "../Styles/Project.css";
+import Drawer from "./Drawer";
+
 const Projects = () => {
   return (
     <div id="projects" className="project-github-link"  >
@@ -26,12 +13,12 @@ const Projects = () => {
       <br />
       <Box style={{ width: "90%", margin: "auto" }} className="boxFlexupper">
         <Flex className="flexBox1">
-          {/* Card 1 here */}
+          
           <Card maxW="lg" className="CardProjects">
             <CardBody className="project-card">
               <Image
                 className="cardImage"
-                src="https://user-images.githubusercontent.com/106021674/223912938-e37d0f04-b65e-480f-831e-66bcecd9fe43.png"
+                src="one-store.png"
                 alt="Meeshow.com"
                 borderRadius="lg"
               />
@@ -93,6 +80,7 @@ const Projects = () => {
               </Box>
             </Box>
 
+            <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
                 className="project-github-link"
@@ -115,6 +103,8 @@ const Projects = () => {
                 </Button>
               </Link>{" "}
             </Flex>
+            </div>
+
           </Card>
           {/* card 2 */}
           <br />
@@ -125,7 +115,7 @@ const Projects = () => {
             <CardBody className="project-card">
               <Image
                 className="cardImage"
-                src="https://private-user-images.githubusercontent.com/112654188/237685170-6748afe1-cbc3-4cca-9081-ee643a7b50de.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjgzODA4MDI0LCJuYmYiOjE2ODM4MDc3MjQsInBhdGgiOiIvMTEyNjU0MTg4LzIzNzY4NTE3MC02NzQ4YWZlMS1jYmMzLTRjY2EtOTA4MS1lZTY0M2E3YjUwZGUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MTFUMTIyMjA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjZiZmVmNTU1Y2M0MWU2ODIwZjJiOTFjMDI5N2RmZmYzNmRlNTdjZDAzYTJmYmNjOWUwMTdmMGNkNzMzOTEzNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.rj9OwgQZJqPdtwv56QfLTg8welbH2jqqRmKaRjfPQkc"
+                src="reg-stuff.png"
                 alt="Meeshow.com"
                 borderRadius="lg"
               />
@@ -180,11 +170,11 @@ const Projects = () => {
                 <span className="tech_used_span8">Json-Server</span>
               </Box>
             </Box>
-
+          <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
                 className="project-github-link"
-                href="https://github.com/dgdeepon/vestal-time-2973"
+                href="https://github.com/Pannakbhushana/reg-stuff"
                 target={"_blank"}
               >
                 <Button colorScheme="blue" solid>
@@ -202,6 +192,7 @@ const Projects = () => {
                 </Button>
               </Link>{" "}
             </Flex>
+            </div>
           </Card>
         </Flex>
         {/* FlexBox2 */}
@@ -214,7 +205,7 @@ const Projects = () => {
             <CardBody className="project-card">
               <Image
                 className="cardImage"
-                src="https://private-user-images.githubusercontent.com/112654188/237686367-e7600435-961e-4741-a8dc-bca0fb62404d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjgzODA4MzAyLCJuYmYiOjE2ODM4MDgwMDIsInBhdGgiOiIvMTEyNjU0MTg4LzIzNzY4NjM2Ny1lNzYwMDQzNS05NjFlLTQ3NDEtYThkYy1iY2EwZmI2MjQwNGQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MTFUMTIyNjQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDY5OGIyNThhZDBlN2VkMmViNmY5NzAzNzM5MmVhYmYzOTBmYmIwNDNlMDg4NTI0MTZiOTc5ZWFhMjIzYjY2MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.N9bQIsXRcYpmGrWAM3uMnVV7iz95LdHKl7pVrlhVRlc"
+                src="amezon-img.png"
                 alt="TrackingTime.com"
                 borderRadius="lg"
               />
@@ -273,6 +264,7 @@ const Projects = () => {
               </Box>
             </Box>
 
+          <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
                 className="project-github-link"
@@ -295,6 +287,8 @@ const Projects = () => {
                 </Button>
               </Link>
             </Flex>
+          </div>
+
           </Card>
           {/* card 2 */}
           <br />
@@ -304,7 +298,7 @@ const Projects = () => {
             <CardBody className="project-card">
               <Image
                 className="cardImage"
-                src="https://private-user-images.githubusercontent.com/112654188/237686928-2999cba4-53fb-4205-b3fd-01e81329931e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjgzODA4NDI3LCJuYmYiOjE2ODM4MDgxMjcsInBhdGgiOiIvMTEyNjU0MTg4LzIzNzY4NjkyOC0yOTk5Y2JhNC01M2ZiLTQyMDUtYjNmZC0wMWU4MTMyOTkzMWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDUxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA1MTFUMTIyODQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWUyN2NiODk3NjA3YzI0NDUyNTA3ZDdhM2VjNWM0Y2U5ZjlkZTU2NGUyMThkOTgyNzAzNTE0MGU4Yjc4NDMyNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Lynydzni8NG_lnWu0dM_D8weaHGXrEANdiCQHRmCWgE"
+                src="fresh-aahar.png"
                 alt="Meeshow.com"
                 borderRadius="lg"
               />
@@ -358,11 +352,11 @@ const Projects = () => {
                 <span className="tech_used_span8">Json-Server</span>
               </Box>
             </Box>
-
+          <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
                 className="project-github-link"
-                href="https://github.com/iamgauhar/Fresh-Ahaar"
+                href="https://github.com/Pannakbhushana/Fresh-Ahaar"
                 target={"_blank"}
               >
                 <Button colorScheme="blue" solid>
@@ -380,9 +374,15 @@ const Projects = () => {
                 </Button>
               </Link>{" "}
             </Flex>
+          </div>
           </Card>
         </Flex>
+       
       </Box>
+      <br />
+      <br />
+      <br />
+      <Drawer/>
     </div>
   );
 };

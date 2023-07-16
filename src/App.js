@@ -16,13 +16,27 @@ function App() {
 
       <br />
       <AboutMe />
+      <br/>
+      <br/>
 
       <Home />
       <br />
       <TechnicalSkills />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Projects />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <Github />
@@ -34,4 +48,4 @@ function App() {
 }
 
 export default App;
-//style={{backgroundColor:"#0F0F0F"}}
+

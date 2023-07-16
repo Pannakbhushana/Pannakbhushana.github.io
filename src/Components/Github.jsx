@@ -1,20 +1,15 @@
-// export default Github;
 import React from "react";
-import GitHubCalendar from "react-github-calendar";
-
+// import GitHubCalendar from "react-github-calendar";
 import styles from "../Styles/Github.module.css";
-import calender from "../Images/calender.png";
 import { Text, Divider, Box } from "@chakra-ui/react";
 const GitStats = () => {
   return (
     <div className={styles.gitStats}>
-      <Text className={styles.github_contribution}>GITHUB CONTRIBUTION</Text>
+      <h2 className={styles.githubContribution}>GITHUB CONTRIBUTION</h2>
       <br />
       <Divider width={"80%"} margin={"auto"} />
       <br />
-      {/* Calendar */}
-
-      {/* Stats */}
+     
       <div className={styles.commits}>
         <img
           id="github-streak-stats"
@@ -35,10 +30,11 @@ const GitStats = () => {
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=pannakbhushana&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact"
           alt=""
         />
-        <div className={styles.calender}>
-          <Box className="react-activity-calendar">
+        <div className={styles.gitCalender}>
+            <img src="github-contri.png" alt="" className={styles.gitImg} />
+          {/* <Box className="react-activity-calendar">
             <GitHubCalendar  className="react-activity-calendar"   username="pannakbhushana" />
-          </Box>
+          </Box> */}
         </div>
       </div>
     </div>
@@ -46,3 +42,5 @@ const GitStats = () => {
 };
 
 export default GitStats;
+
+

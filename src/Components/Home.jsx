@@ -12,16 +12,21 @@ const About = () => {
 
         <div id="user-detail-intro" className={styles.aboutme}>
           
-          <p className={styles.aboutME_p} style={{fontSize:"20px"}}>
+          <p className={styles.aboutME_p} >
+            <br />
             🔸Worked on different projects as leader and co-leader. 🔸
+            <br />
             <br />
             🔸 Keen to find a challenging position within an ambitious
             company.🔸
             <br />
-            🔸 Interested in learning and absorbing new tech in the growing
-            world.🔸 <br />
+            <br />
+            🔸 Interested in learning and absorbing new tech in the growing world.
+            <br />
+            <br />
             🔸Innovative, result-driven Web Developer with sound knowledge in
             JavaScript and React in the Frontend.
+            <br />
             <br />
             🔸For Backend I have a prior knowledge of Node.JS,express,mongoDB
           </p>

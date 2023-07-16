@@ -19,6 +19,7 @@ const Particle = () => {
         background: {
           color: {
             value: "#000000",
+            // value:"#455A64"
           
           },
         },

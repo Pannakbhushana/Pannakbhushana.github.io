@@ -1,10 +1,12 @@
 .contact {
+  font-family: Arial, Helvetica, sans-serif;
   width: 85%;
   height: 700px;
   margin: auto;
   position: relative;
   padding-top: 100px;
   z-index: 1;
+
 
 }
 
@@ -225,7 +227,7 @@ input[type="email"] {
 .contact_heading {
   color: #ffff;
   font-weight: 800;
-  font-family: "Lobster Two", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
 
   text-transform: uppercase;
@@ -238,8 +240,8 @@ input[type="email"] {
   animation: animate 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-
   background-color: orange;
+
   background-image: radial-gradient(
       at 40% 20%,
       hsla(82, 100%, 74%, 1) 0px,
