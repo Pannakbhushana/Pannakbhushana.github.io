@@ -1,7 +1,7 @@
 import React from 'react'
 import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalCloseButton,useDisclosure,Button} from '@chakra-ui/react'
 import {Text,Box,Flex,CardBody,Image,Heading,Divider,Stack,Card,Link} from "@chakra-ui/react";
-import "../Styles/Drawer.css";
+import styles from '../Styles/Drawer.module.css'
 
 export default function Drawer() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -27,17 +27,17 @@ export default function Drawer() {
         <Modal onClose={onClose} size={size} isOpen={isOpen}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Modal Title</ModalHeader>
+            <ModalHeader>Projects</ModalHeader>
             <ModalCloseButton />
             <ModalBody style={{maxHeight:"80vh",overflowY: 'scroll',background:'#fff'}}>
 
-    <Box style={{ width: "90%", margin: "auto" }} className="boxFlexupper">
+    <Box style={{ width: "90%", margin: "auto" }} className={styles.boxFlexupper}>
 
         <Flex className="flexBox1">
     {/* -----------------------------------------------card-1-Youtube----------------------------------------------   */}
-          <Card maxW="lg" className="CardProjects" 
+          <Card maxW="lg" className={styles.CardProjects} 
             boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'>
-            <CardBody className="project-card">
+            <CardBody className={styles.project_card}>
               <Image
                 className="cardImage"
                 src="youtubeImg.png"
@@ -46,7 +46,7 @@ export default function Drawer() {
               />
               <Stack mt="6" spacing="3">
                 <Heading
-                  className="project-title"
+                  className={styles.project_title}
                   fontWeight={"700"}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                   size="md"
@@ -54,7 +54,7 @@ export default function Drawer() {
                   Youtube.com website
                 </Heading>
                 <Text
-                  className="project-description"
+                  className={styles.project_description}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                 >
                   YouTube is an American online video sharing and social media platform headquartered in San Bruno, 
@@ -64,10 +64,11 @@ export default function Drawer() {
               </Stack>
             </CardBody>
 
-            <Box className="tech_used">
-              <span
-                className="project-tech-stack"
+            <Box className={styles.tech_used}>
+              <div
+                className={styles.project_tech_stack}
                 style={{
+                  
                   backgroundColor: "rgb(229,62,62)",
                   color: "#fff",
                   fontFamily: "Lobster Two, cursive",
@@ -78,16 +79,15 @@ export default function Drawer() {
                 }}
               >
                 Individual
-              </span>
+              </div>
               <br />
               <br />
 
-              <Box style={{ gap: "10px" }}>
-                <Box className="tech_used_span" style={{ gap: "10px" }}>
-                <span className="tech_used_span2"> HTML</span>
-                  <span className="tech_used_span1">CSS</span>
-                  <span className="tech_used_span3">JavaScript</span>
-                  <span className="tech_used_span4">API</span>
+              <Box  >
+                <Box className={styles.tech_used_span} style={{ gap: "10px" }}>
+                  <p > HTML</p>
+                  <p >CSS</p>
+                  <p >JavaScript</p>
                 </Box>
               </Box>
             </Box>
@@ -95,7 +95,7 @@ export default function Drawer() {
             <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
-                className="project-github-link"
+                className={styles.project_github_link}
                 href="https://github.com/Pannakbhushana/youtube"
                 target={"_blank"}
               >
@@ -106,7 +106,7 @@ export default function Drawer() {
               </Link>
               <Link
                 style={{ marginLeft: "10px" }}
-                className="project-deployed-link"
+                className={styles.project_github_link}
                 href="https://frolicking-caramel-76c661.netlify.app/"
                 target={"_blank"}
               >
@@ -124,18 +124,18 @@ export default function Drawer() {
           <br />
 
  {/* -----------------------------------------------card-2-coforge----------------------------------------------   */}
-          <Card maxW="lg" className="CardProjects"
+          <Card maxW="lg" className={styles.CardProjects}
           boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'>
-            <CardBody className="project-card">
+            <CardBody className={styles.project_card}>
               <Image
-                className="cardImage"
+                className={styles.cardImage}
                 src="coforgeImg.png"
                 alt="coforge.com"
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
                 <Heading
-                  className="project-title"
+                  className={styles.project_title}
                   fontWeight={"700"}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                   size="md"
@@ -143,7 +143,7 @@ export default function Drawer() {
                   Coforge.com website
                 </Heading>
                 <Text
-                  className="project-description"
+                  className={styles.project_description}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                 >
                   Coforge, formerly known as NIIT Technologies, is an Indian multinational information technology 
@@ -152,9 +152,9 @@ export default function Drawer() {
               </Stack>
             </CardBody>
 
-            <Box className="tech_used">
-              <span
-                className="project-tech-stack"
+            <Box className={styles.tech_used}>
+              <div
+                className={styles.project_tech_stack}
                 style={{
                   backgroundColor: "rgb(229,62,62)",
                   color: "#fff",
@@ -166,22 +166,20 @@ export default function Drawer() {
                 }}
               >
                 Individual
-              </span>
+              </div>
               <br />
               <br />
 
-              <Box className="tech_used_span" style={{ gap: "10px" }} >
-                <span className="tech_used_span2"> React</span>
-                <span className="tech_used_span1">CSS</span>
-                <span className="tech_used_span4">Chakra-Ui</span>
-                <span className="tech_used_span5">JavaScript</span>
-                <span className="tech_used_span7">Netlify deployment</span>
+              <Box className={styles.tech_used_span}  >
+                <p > React</p>
+                <p >Chakra-Ui</p>
+                <p >JavaScript</p>
               </Box>
             </Box>
           <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
-                className="project-github-link"
+                className={styles.project_github_link}
                 href="https://github.com/Pannakbhushana/coforge-clone-repo"
                 target={"_blank"}
               >
@@ -191,7 +189,7 @@ export default function Drawer() {
               </Link>{" "}
               <Link
                 style={{ marginLeft: "10px" }}
-                className="project-deployed-link"
+                className={styles.project_deployed_link}
                 href="https://marvelous-mandazi-522961.netlify.app/"
                 target={"_blank"}
               >
@@ -211,21 +209,21 @@ export default function Drawer() {
         <br />
         <br />
         <br />
-        <Flex justifyContent={"space-evenly"} className="flexBox2">
+        <Flex justifyContent={"space-evenly"} className={styles.flexBox2}>
          
     {/* ------------------------------------------------------card-3-Car-game----------------------------------------------   */}
-          <Card maxW="lg" className="CardProjects"
+          <Card maxW="lg" className={styles.CardProjects}
           boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'>
-            <CardBody className="project-card">
+            <CardBody className={styles.project_card}>
               <Image
-                className="cardImage"
+                className={styles.cardImage}
                 src="cargameImg.png"
                 alt="cargameImg.com"
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
                 <Heading
-                  className="project-title"
+                  className={styles.project_title}
                   fontWeight={"700"}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                   size="md"
@@ -233,7 +231,7 @@ export default function Drawer() {
                   Car Game App
                 </Heading>
                 <Text
-                  className="project-description"
+                  className={styles.project_description}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                 >
                   Experience high-octane racing action in my thrilling car game. 
@@ -242,9 +240,9 @@ export default function Drawer() {
               </Stack>
             </CardBody>
 
-            <Box className="tech_used">
-              <span
-                className="project-tech-stack"
+            <Box className={styles.tech_used}>
+              <div
+                className={styles.project_tech_stack}
                 style={{
                   backgroundColor: "rgb(229,62,62)",
                   color: "#fff",
@@ -256,22 +254,21 @@ export default function Drawer() {
                 }}
               >
                 Individual
-              </span>
+              </div>
               <br />
               <br />
 
-              <Box className="tech_used_span" style={{ gap: "10px" }}>
-                <span className="tech_used_span3">HTML</span>
-                <span className="tech_used_span1">CSS</span>
-                <span className="tech_used_span5">JavaScript</span>
-                <span className="tech_used_span7">Netlify</span>
+              <Box className={styles.tech_used_span} style={{ gap: "10px" }}>
+                <p >HTML</p>
+                <p >CSS</p>
+                <p >JavaScript</p>
               </Box>
             </Box>
 
           <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
-                className="project-github-link"
+                className={styles.project_github_link}
                 href="https://github.com/masai-course/rahul_kumar_mishra_fw21_0895/tree/master/unit-1"
                 target="_blank"
               >
@@ -281,7 +278,7 @@ export default function Drawer() {
               </Link>
               <Link
                 style={{ marginLeft: "10px" }}
-                className="project-deployed-link"
+                className={styles.project_deployed_link}
                 target="_blank"
                 href="https://prismatic-bonbon-9e4494.netlify.app/"
               >
@@ -300,19 +297,19 @@ export default function Drawer() {
           <br />
 
 
- {/* -----------------------------------------------card-4-Life Bindass----------------------------------------------   */}
-          <Card maxW="lg" className="CardProjects"
+ {/* -----------------------------------------------card-4-Life Style----------------------------------------------   */}
+          <Card maxW="lg" className={styles.CardProjects}
           boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'>
-            <CardBody className="project-card">
+            <CardBody className={styles.project_card}>
               <Image
-                className="cardImage"
+                className={styles.cardImage}
                 src="lifebindassImg.png"
                 alt="lifebindassImg.com"
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
                 <Heading
-                  className="project-title"
+                  className={styles.project_title}
                   fontWeight={"700"}
                   style={{ fontFamily: "Lobster Two, cursive" }}
                   size="md"
@@ -320,7 +317,7 @@ export default function Drawer() {
                   LifeStyle.com website
                 </Heading>
                 <Text
-                  className="project-description"
+                  className={styles.project_description}
                   style={{ fontFamily: " Lobster Two, cursive" }}
                 >
                  Lifestyle is a retail fashion brand which comes under Dubai-based retail and hospitality conglomerate,
@@ -328,9 +325,9 @@ export default function Drawer() {
               </Stack>
             </CardBody>
 
-            <Box className="tech_used">
-              <span
-                className="project-tech-stack"
+            <Box className={styles.tech_used}>
+              <div
+                className={styles.project_tech_stack}
                 style={{
                   backgroundColor: "rgb(229,62,62)",
                   color: "#fff",
@@ -342,26 +339,20 @@ export default function Drawer() {
                 }}
               >
                 Individual
-              </span>
+              </div>
               <br />
               <br />
 
-              <Box className="tech_used_span" style={{ gap: "10px" }}>
-                <span className="tech_used_span1">React</span>
-
-                <span className="tech_used_span2"> Css</span>
-
-               
-                <span className="tech_used_span5">JavaScript</span>
-
-                <span className="tech_used_span7">Netlify</span>
-                
+              <Box className={styles.tech_used_span} >
+                <p >React</p>
+                <p > Css</p>   
+                <p >JavaScript</p>             
               </Box>
             </Box>
           <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
             <Flex spacing="2">
               <Link
-                className="project-github-link"
+                className={styles.project_github_link}
                 href="https://github.com/Pannakbhushana/life-bindass"
                 target={"_blank"}
               >
@@ -371,7 +362,7 @@ export default function Drawer() {
               </Link>{" "}
               <Link
                 style={{ marginLeft: "10px" }}
-                className="project-deployed-link"
+                className={styles.project_deployed_link}
                 href="https://deluxe-travesseiro-0bca43.netlify.app/"
                 target="_blank"
               >
@@ -388,21 +379,21 @@ export default function Drawer() {
         <br />
         <br />
         <br />
-        <Flex justifyContent={"space-evenly"} className="flexBox2">
+        <Flex justifyContent={"space-evenly"} className={styles.flexBox2}>
          
          {/* ------------------------------------------------------card-5-Dot-&-Key----------------------------------------------   */}
-               <Card maxW="lg" className="CardProjects"
+               <Card maxW="lg" className={styles.CardProjects}
                boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'>
-                 <CardBody className="project-card">
+                 <CardBody className={styles.project_card}>
                    <Image
-                     className="cardImage"
+                     className={styles.cardImage}
                      src="dotandkeyImg.png"
                      alt="dotandkeyImg.com"
                      borderRadius="lg"
                    />
                    <Stack mt="6" spacing="3">
                      <Heading
-                       className="project-title"
+                       className={styles.project_title}
                        fontWeight={"700"}
                        style={{ fontFamily: " Lobster Two, cursive" }}
                        size="md"
@@ -410,7 +401,7 @@ export default function Drawer() {
                        Dot & key website
                      </Heading>
                      <Text
-                       className="project-description"
+                       className={styles.project_description}
                        style={{ fontFamily: " Lobster Two, cursive" }}
                      >
                       Dot & Key is a fresh take on skincare. One that's founded on the understanding that everyone is unique. 
@@ -418,9 +409,9 @@ export default function Drawer() {
                    </Stack>
                  </CardBody>
      
-                 <Box className="tech_used">
-                   <span
-                     className="project-tech-stack"
+                 <Box className={styles.tech_used}>
+                   <div
+                     className={styles.project_tech_stack}
                      style={{
                        backgroundColor: "rgb(229,62,62)",
                        color: "#fff",
@@ -432,22 +423,21 @@ export default function Drawer() {
                      }}
                    >
                      Individual
-                   </span>
+                   </div>
                    <br />
                    <br />
      
-                   <Box className="tech_used_span" style={{ gap: "10px" }}>
-                     <span className="tech_used_span3">HTML</span>
-                     <span className="tech_used_span1">CSS</span>
-                     <span className="tech_used_span5">JavaScript</span>
-                     <span className="tech_used_span7">Netlify</span>
+                   <Box className={styles.tech_used_span} >
+                     <p >HTML</p>
+                     <p >CSS</p>
+                     <p >JavaScript</p>
                    </Box>
                  </Box>
      
                <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
                  <Flex spacing="2">
                    <Link
-                     className="project-github-link"
+                     className={styles.project_github_link}
                      href="https://github.com/Pannakbhushana/dot-and-key"
                      target="_blank"
                    >
@@ -457,12 +447,12 @@ export default function Drawer() {
                    </Link>
                    <Link
                      style={{ marginLeft: "10px" }}
-                     className="project-deployed-link"
+                     className={styles.project_deployed_link}
                      target="_blank"
                      href="https://glowing-chebakia-9bbca9.netlify.app/"
                    >
                      <Button colorScheme="blue" solid>
-                       {" "}
+                   
                        deloyment
                      </Button>
                    </Link>
@@ -477,18 +467,18 @@ export default function Drawer() {
      
      
       {/* -----------------------------------------------card-6-wellness360-Wefit----------------------------------------------   */}
-               <Card maxW="lg" className="CardProjects"
+               <Card maxW="lg" className={styles.CardProjects}
                boxShadow='rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'>
-                 <CardBody className="project-card">
+                 <CardBody className={styles.project_card}>
                    <Image
-                     className="cardImage"
+                     className={styles.cardImage}
                      src="wefitImg.png"
                      alt="wefitImg.com"
                      borderRadius="lg"
                    />
                    <Stack mt="6" spacing="3">
                      <Heading
-                       className="project-title"
+                       className={styles.project_title}
                        fontWeight={"700"}
                        style={{ fontFamily: "Lobster Two, cursive" }}
                        size="md"
@@ -496,7 +486,7 @@ export default function Drawer() {
                        WEFIT website
                      </Heading>
                      <Text
-                       className="project-description"
+                       className={styles.project_description}
                        style={{ fontFamily: " Lobster Two, cursive" }}
                      >
                       "Introducing WEFIT, a cutting-edge fitness app designed to help users achieve their 
@@ -506,9 +496,9 @@ export default function Drawer() {
                    </Stack>
                  </CardBody>
      
-                 <Box className="tech_used">
-                   <span
-                     className="project-tech-stack"
+                 <Box className={styles.tech_used}>
+                   <div
+                     className={styles.project_tech_stack}
                      style={{
                        backgroundColor: "rgb(229,62,62)",
                        color: "#fff",
@@ -520,26 +510,20 @@ export default function Drawer() {
                      }}
                    >
                      Collaborative
-                   </span>
+                   </div>
                    <br />
                    <br />
      
-                   <Box className="tech_used_span" style={{ gap: "10px" }}>
-                     <span className="tech_used_span1">React</span>
-     
-                     <span className="tech_used_span2"> Css</span>
-     
-                    
-                     <span className="tech_used_span5">JavaScript</span>
-     
-                     <span className="tech_used_span7">Netlify</span>
-                     
+                   <Box className={styles.tech_used_span} >
+                     <p >React</p>
+                     <p > Chakra Ui</p>         
+                     <p >JavaScript</p>               
                    </Box>
                  </Box>
                <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
                  <Flex spacing="2">
                    <Link
-                     className="project-github-link"
+                     className={styles.project_github_link}
                      href="https://github.com/Pannakbhushana/we-fit"
                      target={"_blank"}
                    >
@@ -549,7 +533,7 @@ export default function Drawer() {
                    </Link>{" "}
                    <Link
                      style={{ marginLeft: "10px" }}
-                     className="project-deployed-link"
+                     className={styles.project_deployed_link}
                      href="https://brilliant-chebakia-131166.netlify.app/"
                      target="_blank"
                    >

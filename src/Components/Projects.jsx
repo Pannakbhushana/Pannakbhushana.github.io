@@ -3,6 +3,7 @@ import {Text,Box,Flex,Divider,CardBody,Image,Button,Heading,Stack,Card,Link} fro
 import "../Styles/Project.css";
 import Drawer from "./Drawer";
 
+
 const Projects = () => {
   return (
     <div id="projects" className="project-github-link"  >
@@ -44,7 +45,7 @@ const Projects = () => {
             </CardBody>
 
             <Box className="tech_used">
-              <span
+              <div
                 className="project-tech-stack"
                 style={{
                   backgroundColor: "rgb(229,62,62)",
@@ -57,25 +58,21 @@ const Projects = () => {
                 }}
               >
                 Collaborative
-              </span>
+              </div>
               <br />
               <br />
 
-              <Box style={{ gap: "10px" }}>
+              <Box className="tech_used_span_container">
                 <Box className="tech_used_span" style={{ gap: "10px" }}>
-                  <span className="tech_used_span1">CSS</span>
-
-                  <span className="tech_used_span2"> HTML</span>
-                  <span className="tech_used_span2"> React</span>
-                  <span className="tech_used_span3">Redux</span>
-                  <span className="tech_used_span4">Chakra-Ui</span>
-                  <span className="tech_used_span4">API</span>
-                  <br />
-                  <br />
-                  <span className="tech_used_span5">JavaScript</span>
-
-                  <span className="tech_used_span7">Cylic deployment</span>
-                  <span className="tech_used_span8">Json-Server</span>
+                  <p className="tech_used_span1">CSS</p>
+                  <p className="tech_used_span2"> HTML</p>
+                  <p className="tech_used_span2"> React</p>
+                  <p className="tech_used_span3">Redux</p>
+                  <p className="tech_used_span4">Chakra-Ui</p>
+                  <p className="tech_used_span4">API</p>
+                  <p className="tech_used_span5">JavaScript</p>
+                  <p className="tech_used_span7">Cylic deployment</p>
+                  <p className="tech_used_span8">Json-Server</p>
                 </Box>
               </Box>
             </Box>
@@ -110,7 +107,7 @@ const Projects = () => {
           <br />
           <br />
           <br />
-
+{/* ---------------------------------------------daily-object---------------------------------------------- */}
           <Card maxW="lg" className="CardProjects">
             <CardBody className="project-card">
               <Image
@@ -139,7 +136,7 @@ const Projects = () => {
             </CardBody>
 
             <Box className="tech_used">
-              <span
+              <div
                 className="project-tech-stack"
                 style={{
                   backgroundColor: "rgb(229,62,62)",
@@ -152,22 +149,18 @@ const Projects = () => {
                 }}
               >
                 Collaborative
-              </span>
+              </div>
               <br />
               <br />
 
               <Box className="tech_used_span" style={{ gap: "10px" }}>
-                <span className="tech_used_span1">CSS</span>
-
-                <span className="tech_used_span2"> React</span>
-                <span className="tech_used_span3">Redux</span>
-                <span className="tech_used_span4">Chakra-Ui</span>
-                <br />
-                <br />
-                <span className="tech_used_span5">JavaScript</span>
-
-                <span className="tech_used_span7">Cylic deployment</span>
-                <span className="tech_used_span8">Json-Server</span>
+                <p className="tech_used_span1">CSS</p>
+                <p className="tech_used_span2"> React</p>
+                <p className="tech_used_span3">Redux</p>
+                <p className="tech_used_span4">Chakra-Ui</p>
+                <p className="tech_used_span5">JavaScript</p>
+                <p className="tech_used_span7">Cylic deployment</p>
+                <p className="tech_used_span8">Json-Server</p>
               </Box>
             </Box>
           <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
@@ -200,7 +193,8 @@ const Projects = () => {
         <br />
         <br />
         <Flex justifyContent={"space-evenly"} className="flexBox2">
-          {/* Card 1 here */}
+         
+{/* --------------------------------------------------------------------Amezon--------------------------------------------          */}
           <Card maxW="lg" className="CardProjects">
             <CardBody className="project-card">
               <Image
@@ -230,7 +224,7 @@ const Projects = () => {
             </CardBody>
 
             <Box className="tech_used">
-              <span
+              <div
                 className="project-tech-stack"
                 style={{
                   backgroundColor: "rgb(229,62,62)",
@@ -243,24 +237,18 @@ const Projects = () => {
                 }}
               >
                 Individual
-              </span>
+              </div>
               <br />
               <br />
 
               <Box className="tech_used_span" style={{ gap: "10px" }}>
-              
-
-                <span className="tech_used_span3">HTML</span>
-
-                <span className="tech_used_span1">CSS</span>
-                <span className="tech_used_span2"> React</span>
-                
-                <span className="tech_used_span4">Chakra-Ui</span>
-                <span className="tech_used_span5">JavaScript</span>
-                <br />
-                <br />
-                <span className="tech_used_span7">Netlify</span>
-                <span className="tech_used_span8">Json-Server</span>
+                <p className="tech_used_span3">HTML</p>
+                <p className="tech_used_span1">CSS</p>
+                <p className="tech_used_span2"> React</p>
+                <p className="tech_used_span4">Chakra-Ui</p>
+                <p className="tech_used_span5">JavaScript</p>
+                <p className="tech_used_span7">Netlify</p>
+                <p className="tech_used_span8">Json-Server</p>
               </Box>
             </Box>
 
@@ -294,6 +282,8 @@ const Projects = () => {
           <br />
           <br />
           <br />
+
+{/* -------------------------------------------------------------------Fresh-Ahar /Kinf-meal----------------------------------------- */}
           <Card maxW="lg" className="CardProjects">
             <CardBody className="project-card">
               <Image
@@ -309,7 +299,7 @@ const Projects = () => {
                   style={{ fontFamily: "Lobster Two, cursive" }}
                   size="md"
                 >
-                  Hindustan.com website
+                  Kind Meals website
                 </Heading>
                 <Text
                   className="project-description"
@@ -321,7 +311,7 @@ const Projects = () => {
             </CardBody>
 
             <Box className="tech_used">
-              <span
+              <div
                 className="project-tech-stack"
                 style={{
                   backgroundColor: "rgb(229,62,62)",
@@ -334,22 +324,17 @@ const Projects = () => {
                 }}
               >
                 Collaborative
-              </span>
+              </div>
               <br />
               <br />
 
               <Box className="tech_used_span" style={{ gap: "10px" }}>
-                <span className="tech_used_span1">CSS</span>
-
-                <span className="tech_used_span2"> HTML</span>
-
-                <span className="tech_used_span4">API</span>
-                <br />
-                <br />
-                <span className="tech_used_span5">JavaScript</span>
-
-                <span className="tech_used_span7">Cylic deployment</span>
-                <span className="tech_used_span8">Json-Server</span>
+                <p className="tech_used_span1">CSS</p>
+                <p className="tech_used_span2"> HTML</p>
+                <p className="tech_used_span4">API</p>
+                <p className="tech_used_span5">JavaScript</p>
+                <p className="tech_used_span7">Cylic deployment</p>
+                <p className="tech_used_span8">Json-Server</p>
               </Box>
             </Box>
           <div style={{margin:"auto",marginTop:"5%",marginBottom:"5%"}}>
