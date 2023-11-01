@@ -39,15 +39,16 @@ const AboutMe = () => {
                 <br /> 👋👋👋
               </Text>
               <Text>
-                <p id="user-detail-intro" className="aboutME_p" >
+                <p id="user-detail-intro" className="aboutME_p" style={{textAlign:"justify"}} >
                   A self-motivated hard-working and ambitious Full Stack Web
-                  Developer with proficiency in HTML,CSS,JavaScript and
-                  React.Problem-solving mindset and ability to perform well in
+                  Developer with proficiency in Data Stucture And Algorithms.
+                  Problem-solving mindset and ability to perform well in
                   collaboration hours of coding and hands-on experience in
-                  developing 4 fully functioning projects. 100+hour of holistics
-                  development which help in developing about 40 mini
+                  developing six fully functioning projects. 100+hour of holistics
+                  development which help in developing about 30 mini
                   projects.Looking forward to work as accountable and competent
                   employee in a tech company
+
                 </p>
               </Text>
             </Box>

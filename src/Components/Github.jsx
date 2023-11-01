@@ -30,8 +30,9 @@ const GitStats = () => {
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=pannakbhushana&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact"
           alt=""
         />
-        <div className={styles.gitCalender}>
-            <img src="github-contri.png" alt="" className={styles.gitImg} />
+        {/* className={styles.gitCalender} */}
+        <div  className="react-activity-calendar">
+            <img src="github-contri.png" alt="" className={styles.gitImg} /> 
           {/* <Box className="react-activity-calendar">
             <GitHubCalendar  className="react-activity-calendar"   username="pannakbhushana" />
           </Box> */}

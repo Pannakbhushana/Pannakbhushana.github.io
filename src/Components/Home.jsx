@@ -11,24 +11,17 @@ const About = () => {
       <Divider width={"80%"} margin={"auto"} />
 
         <div id="user-detail-intro" className={styles.aboutme}>
-          
-          <p className={styles.aboutME_p} >
-            <br />
-            🔸Worked on different projects as leader and co-leader. 🔸
-            <br />
-            <br />
-            🔸 Keen to find a challenging position within an ambitious
-            company.🔸
-            <br />
-            <br />
-            🔸 Interested in learning and absorbing new tech in the growing world.
-            <br />
-            <br />
-            🔸Innovative, result-driven Web Developer with sound knowledge in
-            JavaScript and React in the Frontend.
-            <br />
-            <br />
-            🔸For Backend I have a prior knowledge of Node.JS,express,mongoDB
+          <br />
+          <br />
+          <p className={styles.aboutME_p} style={{textAlign:"justify",lineHeight:"40px"}} >
+          I am a results-oriented web developer with a strong background in frontend technologies such as HTML, CSS, JavaScript and React. 
+          My proficiency extends to backend development, where I work with Node.js, Express, and MongoDB to create scalable and 
+          efficient web applications. I am passionate about embracing new technologies and methodologies, ensuring that 
+          I stay up-to-date with the latest trends in the industry. Driven by a commitment to excellence, I am dedicated to
+           producing high-quality solutions. My collaborative nature enables me to work effectively in diverse teams, 
+           where I contribute my technical expertise to achieve common goals. I am enthusiastic about joining an 
+           innovative company where my skills can be harnessed to drive impactful projects and foster a culture of 
+           continuous improvement.
           </p>
         </div>
       </div>

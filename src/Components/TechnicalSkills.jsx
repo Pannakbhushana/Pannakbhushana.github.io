@@ -64,7 +64,7 @@ const TechnicalSkills = () => {
             alt="chakra"
           />
           <br />
-          <Text className="skills-card-name">Chakra Ui</Text>
+          <Text className="skills-card-name" >Chakra Ui</Text>
         </Box>
       </Box>
       <br />

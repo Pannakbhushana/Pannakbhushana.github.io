@@ -78,12 +78,17 @@ const Contact = () => {
               +91-9304395338
             </h3>
           </div>
-          <div>
+          <div style={{cursor:"pointer"}} onClick={()=>{
+                window.open("https://www.linkedin.com/in/rahul-kumar-mishra-060054241","_blank")
+          }}>
             <img className="iconsImages" src={linkedin} alt=""  id="contact-linkedin"/>
             <h3>LinkedIn</h3>
             <Link className="contact-linkedin">Send a message</Link>
           </div>
-          <div>
+
+          <div style={{cursor:"pointer"}} onClick={()=>{
+                window.open("https://github.com/Pannakbhushana","_blank")
+          }}>
             <img className="iconsImages" src={Github} alt="" id="contact-github" />
             <h3>Github</h3>
             <Link contact-github>Send a message</Link>
