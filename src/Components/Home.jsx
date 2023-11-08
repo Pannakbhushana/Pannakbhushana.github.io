@@ -13,7 +13,7 @@ const About = () => {
         <div id="user-detail-intro" className={styles.aboutme}>
           <br />
           <br />
-          <p className={styles.aboutME_p} style={{textAlign:"justify",lineHeight:"40px"}} >
+          <p className={styles.aboutME_p}  >
           I am a results-oriented web developer with a strong background in frontend technologies such as HTML, CSS, JavaScript and React. 
           My proficiency extends to backend development, where I work with Node.js, Express, and MongoDB to create scalable and 
           efficient web applications. I am passionate about embracing new technologies and methodologies, ensuring that 

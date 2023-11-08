@@ -62,24 +62,22 @@ const Contact = () => {
           <div>
             <h3>My Info:</h3>
             <h3>
-              <img className="iconsImages" src={mail} alt="" />:
-              <Link
+              <img className="iconsImages" src={mail} alt=""  />
+              <p
                 id="contact-email"
-                href=""
-                target="_blank"
                 className="contact-email"
               >
                 rahulkumarmishra5338@gmail.com
-              </Link>
+              </p>
             </h3>
             <h3 id="contact-phone" className="contact-phone">
               {" "}
-              <img className="iconsImages" src={phone} alt=""  id="contact-phone" /> :
+              <img className="iconsImages" src={phone} alt=""  id="contact-phone" /> 
               +91-9304395338
             </h3>
           </div>
           <div style={{cursor:"pointer"}} onClick={()=>{
-                window.open("https://www.linkedin.com/in/rahul-kumar-mishra-060054241","_blank")
+                window.open("https://drive.google.com/file/d/1aVkd8J3elVOW99Jhcx-sD2tlBuTsV6nf/view?usp=sharing","_blank")
           }}>
             <img className="iconsImages" src={linkedin} alt=""  id="contact-linkedin"/>
             <h3>LinkedIn</h3>

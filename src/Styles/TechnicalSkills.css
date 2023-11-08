@@ -97,9 +97,13 @@
     width:30%;
     margin: auto;
  
-  } 
+  }
+   
 }
 @media only screen and (max-width: 780px) and (min-width: 320px) {
+  #skills{
+    margin-top: 25%;
+  }
   .techBox1{
     font-size: 28px;
   }
@@ -117,10 +121,10 @@
 
   .skills-card{
     /* border: 1px solid yellow; */
-    width: 80%;
-    height: 200px;
+    width: 60%;
+    height: 150px;
     margin-top: 20%;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 
   .skills-card-img{
@@ -130,4 +134,13 @@
  
   } 
   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #skills{
+    margin-top: 25%;
+  }
+
+ 
 }

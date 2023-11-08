@@ -31,7 +31,7 @@
     width: 80%;
     /* height: 50%; */
     margin: auto;
-    line-height: 30px;
+    
   }
   .aboutme > h3 {
     font-size: 18px;
@@ -43,6 +43,9 @@
     z-index: 1;
     font-size: 20px;
     position: relative;
+    text-align: justify;
+    line-height: 40px;
+    margin-top: -5%;
   }
   
   /* Media Query for Mobile Devices */
@@ -78,5 +81,7 @@
     }
     .aboutME_p{
       font-size: 16px;
+      line-height: 28px;
+      margin-top: -10%;
     }
   }
