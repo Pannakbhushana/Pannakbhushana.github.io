@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8341028.css",
-    "main.js": "/static/js/main.93426dfd.js",
+    "main.css": "/static/css/main.464df737.css",
+    "main.js": "/static/js/main.97f67483.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/Rahul-Kumar-Mishra-Resume.pdf": "/static/media/Rahul-Kumar-Mishra-Resume.b791398398617d7a3f65.pdf",
+    "static/media/Rahul-Kumar-Mishra-Resume.pdf": "/static/media/Rahul-Kumar-Mishra-Resume.95d1943593d65f9f5bc2.pdf",
     "static/media/rahul.png": "/static/media/rahul.7297322872c823582bdb.png",
     "static/media/github.png": "/static/media/github.553c66159c5672f25df6.png",
     "static/media/phone.png": "/static/media/phone.097ef67f1a9a19cbff3b.png",
@@ -11,12 +11,12 @@
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/mail.png": "/static/media/mail.9082177d266cee25a57b.png",
     "index.html": "/index.html",
-    "main.f8341028.css.map": "/static/css/main.f8341028.css.map",
-    "main.93426dfd.js.map": "/static/js/main.93426dfd.js.map",
+    "main.464df737.css.map": "/static/css/main.464df737.css.map",
+    "main.97f67483.js.map": "/static/js/main.97f67483.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8341028.css",
-    "static/js/main.93426dfd.js"
+    "static/css/main.464df737.css",
+    "static/js/main.97f67483.js"
   ]
 }
