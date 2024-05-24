@@ -12,7 +12,7 @@ import resume from "../resume/Rahul-Kumar-Mishra-Resume.pdf";
 const AboutMe = () => {
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1aVkd8J3elVOW99Jhcx-sD2tlBuTsV6nf/view?usp=sharing"
+      "https://drive.google.com/file/d/1LD24IjCjdielVrY4O3BngFvYkj51hIOq/view?usp=sharing"
     );
   };
   return (

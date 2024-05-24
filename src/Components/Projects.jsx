@@ -4,6 +4,21 @@ import ProjectsCard from "./ProjectsCard";
 import '../Styles/Project.css'
 const ProjectsDetails = [
   {
+    IMAGE: "kitabganj-img.png",
+    NAME: "KITABGANJ_",
+    TECHSTACK: [
+      "React",
+      "CkakraUi",
+      "Express.js",
+      "MongoDB",
+    ],
+    DISCRIPTION:
+      `Kitabganj is a dynamic web application for books and poetry with a responsive design and 
+      an admin dashboard for managing content.`,
+    GITHUB: "https://github.com/Pannakbhushana/kitabganj",
+    DEPLOY: "https://kitaabganj.com/",
+  },
+  {
     IMAGE: "one-store.png",
     NAME: "OneStore",
     TECHSTACK: [
@@ -17,7 +32,7 @@ const ProjectsDetails = [
       Resellers, who sell products online through WhatsApp and
       Facebook`,
     GITHUB: "https://github.com/Pannakbhushana/Meesho-Clone",
-    DEPLOY: "https://storied-blini-63970f.netlify.app/",
+    DEPLOY: "https://ephemeral-brioche-f8dbe6.netlify.app/",
   },
 
   {
@@ -64,18 +79,6 @@ const ProjectsDetails = [
     GITHUB: "https://github.com/Pannakbhushana/youtube",
     DEPLOY: "https://frolicking-caramel-76c661.netlify.app/",
   },
-
-  {
-    IMAGE: "beekin.png",
-    NAME: "Beekin-Job",
-    TECHSTACK: ["React", "Redux", "Express.js","MongoDB"],
-    DISCRIPTION:
-      `Beekin-Job is your go-to job search app, streamlining the process of finding your ideal job. 
-      With smart filters and instant updates, discover tailored job listings effortlessly. 
-      Your future career starts here.`,
-    GITHUB: "https://github.com/Pannakbhushana/job-search-app",
-    DEPLOY: "https://hilarious-madeleine-12f733.netlify.app/",
-  },
 ];
 
 export default function SimpleThreeColumns() {
@@ -116,7 +119,7 @@ export default function SimpleThreeColumns() {
     </Box>
     
       <br />
-      <Drawer/>
+      {/* <Drawer/> */}
   </>
   );
 }
